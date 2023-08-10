@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Gallery</title>
+  <link rel="stylesheet" href="Q3.styles.css">
+</head>
+<body>
+    <h1>Gallery</h1>
+  <div class="gallery">
+    <div class="thumbnail" onclick="openLightbox('1.jpg')">
+      <img src="1.jpg" alt="Thumbnail 1">
+    </div>
+    <div class="thumbnail" onclick="openLightbox('2.jpg')">
+      <img src="2.jpg" alt="Thumbnail 2">
+    </div>
+    <div class="thumbnail" onclick="openLightbox('3.jpg')">
+      <img src="3.jpg" alt="Thumbnail 3">
+    </div>
+  </div>
+
+  <div class="lightbox" id="lightbox">
+    <span class="close" onclick="closeLightbox()">&times;</span>
+    <img class="lightbox-content" id="lightboxImg" src="">
+  </div>
+
+  <script src="Q3.java.js"></script>
+</body>
+</html>

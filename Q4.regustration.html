@@ -1,0 +1,37 @@
+<!--
+    Design a registration form using HTML and CSS and validate the form using HTML5 form validation attributes.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="Q4.styles.css">
+<title>Registration Form</title>
+</head>
+<body>
+  <form class="registration-form" action="#" method="post">
+    <h1>Registration Now</h1>
+    <div class="form-group">
+      <label for="username">Username</label>
+      <input type="text" id="username" name="username" required minlength="3" maxlength="20" placeholder="username">
+      <div class="error-message">Please enter a valid username (3-20 characters).</div>
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required placeholder="email">
+      <div class="error-message">Please enter a valid email address.</div>
+    </div>
+
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" required minlength="6" placeholder="passoword">
+      <div class="error-message">Password must be at least 6 characters long.</div>
+    </div>
+
+    <button type="submit" class="submit-button">Register</button>
+  </form>
+</body>
+</html>
